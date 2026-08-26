@@ -53,9 +53,22 @@ body {
 }
 
 .botao:first-child {
-    border-radius: 40px 40px 0 0;
+border-radius: 40px 40px 0 0;
 }
 
 .botoes {
-    display: block;
+display: block;
+}
+
+
+@media screen and (min-width: 768x){
+.botoes{
+display: flex;
+}
+.botao:fist-child{
+border-radius: 40px 0 0 0;
+}
+.botao:last-child{
+border-radius: 0 0px 0 0;
+}
 }
