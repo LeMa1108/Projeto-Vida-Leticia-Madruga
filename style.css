@@ -60,6 +60,11 @@ border-radius: 40px 40px 0 0;
 display: block;
 }
 
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-botton: 4px solid var(--verde);
+}
+
 
 @media screen and (min-width: 768x){
 .botoes{
