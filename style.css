@@ -62,7 +62,7 @@ display: block;
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-botton: 4px solid var(--verde);
+    border-color: 4px solid var(--verde);
 }
 
 
