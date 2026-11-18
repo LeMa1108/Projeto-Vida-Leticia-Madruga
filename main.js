@@ -34,12 +34,23 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
 
-    return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
+    return (dias + " dias " + horas + " horas " + minutos + " minutos "
+        + segundos + " segundos ");
 }
 
 
 
 
-function atualizacronometro() {
+function atualizacronometro(){
+    for (let i=0; i < contadores.length; i++){
+        contadores[i]. textContent = calculaTempo(tempos[i]);
+    }
 
 }
+
+function comecaCronometro(){
+    atualizacronometro();
+    setInterval(atualizacronometro, 1000);
+}
+
+comecaCronometro();
