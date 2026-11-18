@@ -16,7 +16,7 @@ for (let i = 0; i < botoes.length; i++) {
 
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2026-12-18T00:00:00");
-const tempoObjetivo2 = new Date("2026-12-18T00:00:00");
+const tempoObjetivo2 = new Date("2026-12-17T00:00:00");
 const tempoObjetivo3 = new Date("2026-12-18T00:00:00");
 const tempoObjetivo4 = new Date("2026-12-18T00:00:00");
 
@@ -33,9 +33,12 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-
+    if(tempoFinal > 0){}
     return (dias + " dias " + horas + " horas " + minutos + " minutos "
         + segundos + " segundos ");
+        }else{
+            return "Przaov finalizado!";
+        }
 }
 
 
